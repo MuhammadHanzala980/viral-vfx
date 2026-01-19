@@ -320,32 +320,32 @@ export default function ViralVFXPage() {
               {
                 title: "✅ Membuat Video yang Menghentikan Scroll",
                 description: "Tanpa mempelajari perangkat lunak yang rumit atau perangkat lunak yang mahal",
-                image: "/learn-scroll-stopping-videos.jpg",
+                image: "/course-how-1.webp",
               },
               {
                 title: "✅ Meledak dengan Penayangan dan Pengikut",
                 description: "Bahkan jika Anda (saat ini) tidak memiliki audiens yang besar",
-                image: "/learn-views-followers.jpg",
+                image: "/course-how-2.webp",
               },
               {
                 title: "✅ Mengembangkan Merek Anda sebagai Otoritas",
                 description: "Dan bersinar di antara persaingan di industri ANDA",
-                image: "/learn-brand-authority.jpg",
+                image: "/course-how-3.webp",
               },
               {
                 title: "✅ Mendapatkan Kerja Sama Merek & Meraih Status Influencer",
                 description: "Menggunakan konten unik yang tidak dimiliki orang lain",
-                image: "/learn-brand-deals.jpg",
+                image: "/course-how-4.webp",
               },
               {
                 title: "✅ Tingkatkan Keterampilan Anda dengan Cepat",
                 description: "dengan meninggalkan tutorial Youtube yang tidak terorganisir",
-                image: "/learn-skills-fast.jpg",
+                image: "/course-how-5.webp",
               },
               {
                 title: "✅ Membuka Kunci Algoritma",
                 description: "Dan temukan audiens Anda tidak peduli apa pun niche Anda",
-                image: "/learn-unlock-algorithm.jpg",
+                image: "/course-how-6.webp",
               }
             ].map((item, i) => (
               <div
@@ -367,9 +367,9 @@ export default function ViralVFXPage() {
 
       {/* SECTION 5: STUDENT RESULTS */}
       <section id="student-results" className="py-20 bg-gray-900 px-4 text-center">
-        <h2 className="text-[2.5rem] font-black leading-tight mb-6">Hasil Siswa Berbicara Sendiri!</h2>
-        <p className="text-5xl font-bold text-[#25F4EE] mb-2">7.8 JUTA</p>
-        <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">PENAYANGAN pada salah satu pelajaran pertama</p>
+        {/* <h2 className="text-[2.5rem] font-black leading-tight mb-6">Hasil Siswa Berbicara Sendiri!</h2> */}
+        <p className=" max-w-[1204px] text-[24px] md:text-[48px] text-[#e0e0e0] mb-12 m-auto "> Hasil Siswa Berbicara Sendiri! <span className="underline font-bold text-[#25F4EE]">7.8 JUTA PENAYANGAN</span> pada salah satu pelajaran pertama</p>
+        {/* <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">PENAYANGAN pada salah satu pelajaran pertama</p> */}
 
         <div className="container mx-auto max-w-full px-4 mb-12 m-auto">
           <div className="flex flex-wrap overflow-x-hidden gap-4 pb-4 snap-x snap-mandatory scrollbar-hide justify-center">
@@ -396,9 +396,9 @@ export default function ViralVFXPage() {
 
       {/* SECTION 6: TRUSTED BY */}
       <section id="trusted-by" className="py-12 px-4">
-        <div className="container mx-auto max-w-5xl text-center">
-          <p className="text-2xl font-bold">Yang Anda Butuhkan Hanyalah Ponsel Pintar Anda dan APLIKASI GRATIS!</p>
-          <p className="text-lg text-gray-400">*Tidak Perlu Pengalaman!</p>
+        <div className="container mx-auto max-w-8xl text-center">
+          <p className="text-[24px] md:text-[38px]">Yang Anda Butuhkan Hanyalah Ponsel Pintar Anda dan <span className="underline text-[#25F4EE]">APLIKASI GRATIS!</span></p>
+          <p className="text-[24px] md:text-[38px] italic ">*Tidak Perlu Pengalaman!</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-10">
             {[
               { image: null, title: null },
@@ -424,26 +424,26 @@ export default function ViralVFXPage() {
 
       {/* SECTION 7: PRICING / BUNDLE */}
       <section id="pricing" className="py-20 px-4">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold text-center mb-2">Bergabunglah Hari Ini untuk Hemat 90% & Dapatkan Bonus Tahun Baru Eksklusif! </h2>
-          <p className="text-center text-yellow-400 font-semibold mb-6">PROMO BERAKHIR MALAM INI</p>
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-[24px] md:text-[48px] font-bold text-center mb-2">Bergabunglah Hari Ini untuk Hemat 90% & Dapatkan Bonus Tahun Baru Eksklusif! </h2>
+          <p className="text-center text-yellow-400 text-[18px] md:text-[30px] font-semibold mb-6">(PROMO BERAKHIR MALAM INI)</p>
 
-          <img src='/save-90.jpeg' alt='Save 90%' className='mx-auto mb-6 rounded-lg shadow-lg border border-gray-700' />
+          <img src='/save-90.jpeg' alt='Save 90%' className='mx-auto mb-6 md:max-w-4xl rounded-lg shadow-lg border border-gray-700' />
 
-          <div className="bg-[#111] border-2 border-[#FE2C55] rounded-xl p-10 shadow-[0_10px_30px_rgba(254,44,85,0.1)]">
-            <ul className="space-y-3 mb-8">
+          <div className="bg-[#111] border-2 border-[#FE2C55] rounded-xl p-10 max-w-4xl m-auto shadow-[0_10px_30px_rgba(254,44,85,0.1)]">
+            {/* <ul className="space-y-3 mb-8">
               {[
-                "☑️ Kursus VFX Viral Pemula 7 Hari (Senilai $297)",
-                "☑️ BONUS TAHUN BARU #1: Kursus Branding Viral (Senilai $197)",
-                "☑️ BONUS TAHUN BARU #2: Kursus VFX Viral PRO (Senilai $197)",
-                "☑️ BONUS TAHUN BARU #3: Kursus Singkat Capcut Pemula (Senilai $147)",
-                "☑️ BONUS TAHUN BARU #4: Asisten Pribadi Ahli Strategi Konten AI (Senilai $127)",
-                "☑️ BONUS TAHUN BARU #5: Akses Seumur Hidup Aplikasi iOS/ANDROID (Senilai $186)",
-                "☑️ BONUS TAHUN BARU #6: Templat Latihan Tyler (Senilai $127)",
-                "☑️ BONUS TAHUN BARU #7: Akses VIP Workshop Langsung (Senilai $497)",
-                "☑️ BONUS TAHUN BARU #8: Komunitas Eksklusif (TAK TERNILAI)",
+                "Kursus VFX Viral Pemula 7 Hari (Senilai $297)",
+                "BONUS TAHUN BARU #1: Kursus Branding Viral (Senilai $197)",
+                "BONUS TAHUN BARU #2: Kursus VFX Viral PRO (Senilai $197)",
+                "BONUS TAHUN BARU #3: Kursus Singkat Capcut Pemula (Senilai $147)",
+                "BONUS TAHUN BARU #4: Asisten Pribadi Ahli Strategi Konten AI (Senilai $127)",
+                "BONUS TAHUN BARU #5: Akses Seumur Hidup Aplikasi iOS/ANDROID (Senilai $186)",
+                "BONUS TAHUN BARU #6: Templat Latihan Tyler (Senilai $127)",
+                "BONUS TAHUN BARU #7: Akses VIP Workshop Langsung (Senilai $497)",
+                "BONUS TAHUN BARU #8: Komunitas Eksklusif (TAK TERNILAI)",
               ].map((item, i) => (
-                <li key={i} className="flex items-center space-x-3">
+                <li key={i} className="flex items-center space-x-3 text-[14px] md:text-[18px] ">
                   <svg
                     className="text-[#FE2C55] w-6 h-6 flex-shrink-0"
                     fill="none"
@@ -457,12 +457,56 @@ export default function ViralVFXPage() {
                   </span>
                 </li>
               ))}
+            </ul> */}
+
+            <ul className="space-y-3 mb-8">
+              {[
+                "Kursus VFX Viral Pemula 7 Hari (Senilai $297)",
+                "BONUS TAHUN BARU #1: Kursus Branding Viral (Senilai $197)",
+                "BONUS TAHUN BARU #2: Kursus VFX Viral PRO (Senilai $197)",
+                "BONUS TAHUN BARU #3: Kursus Singkat Capcut Pemula (Senilai $147)",
+                "BONUS TAHUN BARU #4: Asisten Pribadi Ahli Strategi Konten AI (Senilai $127)",
+                "BONUS TAHUN BARU #5: Akses Seumur Hidup Aplikasi iOS/ANDROID (Senilai $186)",
+                "BONUS TAHUN BARU #6: Templat Latihan Tyler (Senilai $127)",
+                "BONUS TAHUN BARU #7: Akses VIP Workshop Langsung (Senilai $497)",
+                "BONUS TAHUN BARU #8: Komunitas Eksklusif (TAK TERNILAI)",
+              ].map((item, i) => {
+                // Detect "BONUS TAHUN BARU #<num>:" prefix (case-insensitive)
+                const prefixMatch = item.match(/^(BONUS TAHUN BARU\s*#\d+:\s*)/i);
+                const prefix = prefixMatch ? prefixMatch[1] : null;
+                const rest = prefix ? item.slice(prefix.length) : item;
+
+                // Split rest into main text and parentheses content (if any)
+                const parenMatch = rest.match(/^(.*?)(\s*\((.*)\))?$/);
+                const mainText = parenMatch ? parenMatch[1] : rest;
+                const parenFull = parenMatch && parenMatch[2] ? parenMatch[2] : null;
+
+                return (
+                  <li key={i} className="flex items-center space-x-3 text-[14px] md:text-[18px]">
+                    <svg
+                      className="text-[#FE2C55] w-6 h-6 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+
+                    <span>
+                      {prefix && <span className="font-light">{prefix}</span>}
+
+                      <span className="font-bold">{mainText}</span>
+                      {parenFull && <span className="font-bold text-yellow-400 italic">{parenFull}</span>}
+                    </span>
+                  </li>
+                );
+              })}
             </ul>
             <div className="text-center my-6">
               <p className="text-gray-400 text-lg">TOTAL NILAI: $1825</p>
               <p className="text-6xl font-black text-white my-2">HANYA $97</p>
               <p className="text-2xl font-bold text-red-500 line-through">$997</p>
-              <p className="text-lg text-white font-semibold">(Akses Seumur Hidup Instan!)</p>
+              <p className="text-[18px] text-white font-semibold">(Akses Seumur Hidup Instan!)</p>
             </div>
             <a
               href="#pricing"
@@ -471,7 +515,7 @@ export default function ViralVFXPage() {
               Saya Siap Menjadi VIRAL! (Hemat 90%)
             </a>
             <div className="text-center mt-4">
-              <span className="text-sm text-gray-400">Garansi Uang Kembali 100%</span>
+              <span className="text-lg text-gray-400">Garansi Uang Kembali 100%</span>
             </div>
           </div>
         </div>
