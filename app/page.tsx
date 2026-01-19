@@ -128,8 +128,8 @@ export default function ViralVFXPage() {
                     key={index}
                     onClick={() => goToImage(index)}
                     className={`rounded h-20 w-20 flex-1 overflow-hidden transition-all ${currentImageIndex === index
-                        ? "border-2 border-[#FE2C55] ring-2 ring-[#FE2C55]/30"
-                        : "border border-gray-600 hover:border-gray-400"
+                      ? "border-2 border-[#FE2C55] ring-2 ring-[#FE2C55]/30"
+                      : "border border-gray-600 hover:border-gray-400"
                       }`}
                   >
                     <img
@@ -318,35 +318,35 @@ export default function ViralVFXPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: "Video Scroll-Stopping",
-                description: "Membuat Video Scroll-Stopping tanpa software mahal atau rumit",
+                title: "✅ Membuat Video yang Menghentikan Scroll",
+                description: "Tanpa mempelajari perangkat lunak yang rumit atau perangkat lunak yang mahal",
                 image: "/learn-scroll-stopping-videos.jpg",
               },
               {
-                title: "Views dan Follower",
-                description: "Meledak dengan Views dan Follower bahkan jika Anda saat ini tidak punya audiens",
+                title: "✅ Meledak dengan Penayangan dan Pengikut",
+                description: "Bahkan jika Anda (saat ini) tidak memiliki audiens yang besar",
                 image: "/learn-views-followers.jpg",
               },
               {
-                title: "Brand Anda sebagai Otoritas",
-                description: "Membangun Brand Anda sebagai Otoritas dan bersinar di antara kompetisi",
+                title: "✅ Mengembangkan Merek Anda sebagai Otoritas",
+                description: "Dan bersinar di antara persaingan di industri ANDA",
                 image: "/learn-brand-authority.jpg",
               },
               {
-                title: "Brand Deals & Status Influencer",
-                description: "Mendapatkan Brand Deals & Status Influencer menggunakan konten unik",
+                title: "✅ Mendapatkan Kerja Sama Merek & Meraih Status Influencer",
+                description: "Menggunakan konten unik yang tidak dimiliki orang lain",
                 image: "/learn-brand-deals.jpg",
               },
               {
-                title: "Skill Anda dengan Cepat",
-                description: "Meningkatkan Skill Anda dengan Cepat tanpa tutorial Youtube yang tidak teratur",
+                title: "✅ Tingkatkan Keterampilan Anda dengan Cepat",
+                description: "dengan meninggalkan tutorial Youtube yang tidak terorganisir",
                 image: "/learn-skills-fast.jpg",
               },
               {
-                title: "Kunci Algoritma",
-                description: "Membuka Kunci Algoritma dan temukan audiens Anda, apa pun niche Anda",
+                title: "✅ Membuka Kunci Algoritma",
+                description: "Dan temukan audiens Anda tidak peduli apa pun niche Anda",
                 image: "/learn-unlock-algorithm.jpg",
-              },
+              }
             ].map((item, i) => (
               <div
                 key={i}
@@ -356,8 +356,8 @@ export default function ViralVFXPage() {
                   <img src={item.image || "/placeholder.svg"} alt={item.title} className="w-full h-full object-cover" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                  <p className="text-gray-400">{item.description}</p>
+                  {/* <h3 className="text-xl text-center font-bold text-white mb-2">{item.title}</h3> */}
+                  <p className="text-[#e0e0e0] text-center text-[18px] ">  <span className="font-bold">{item.title}</span> {item.description}</p>
                 </div>
               </div>
             ))}
@@ -371,32 +371,52 @@ export default function ViralVFXPage() {
         <p className="text-5xl font-bold text-[#25F4EE] mb-2">7.8 JUTA</p>
         <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">PENAYANGAN pada salah satu pelajaran pertama</p>
 
-        <div className="container mx-auto max-w-6xl grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-          {[1, 2, 3, 4].map((i) => (
-            <div
-              key={i}
-              className="bg-gray-800 aspect-square rounded-lg flex items-center justify-center text-gray-500"
-            >
-              (Hasil Siswa {i})
-            </div>
-          ))}
+        <div className="container mx-auto max-w-full px-4 mb-12 m-auto">
+          <div className="flex flex-wrap overflow-x-hidden gap-4 pb-4 snap-x snap-mandatory scrollbar-hide justify-center">
+            {[
+              { src: "/st-res-1.webp", alt: "Hasil Siswa 1" },
+              { src: "/st-res-2.webp", alt: "Hasil Siswa 2" },
+              { src: "/st-res-3.webp", alt: "Hasil Siswa 3" },
+              { src: "/st-res-4.webp", alt: "Hasil Siswa 4" },
+              { src: "/st-res-5.webp", alt: "Hasil Siswa 5" },
+              { src: "/st-res-6.webp", alt: "Hasil Siswa 6" },
+            ].map((item, i) => (
+              <div key={i} className="flex-shrink-0 w-48 h-[330px] rounded-lg overflow-hidden snap-center">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-        <p className="text-2xl font-bold">Yang Anda Butuhkan Hanya Smart Phone dan APLIKASI GRATIS!</p>
-        <p className="text-lg text-gray-400">Tidak Perlu Pengalaman!</p>
+
       </section>
 
       {/* SECTION 6: TRUSTED BY */}
       <section id="trusted-by" className="py-12 px-4">
         <div className="container mx-auto max-w-5xl text-center">
-          <h4 className="text-xl font-bold text-white mb-6">Dipercaya Oleh:</h4>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {[1, 2, 3, 4, 5].map((i) => (
-              <img
-                key={i}
-                src={`https://placehold.co/150x50/0a0a0a/555?text=LOGO+${i}`}
-                alt={`Logo Klien ${i}`}
-                className="h-8 md:h-10 opacity-60 grayscale"
-              />
+          <p className="text-2xl font-bold">Yang Anda Butuhkan Hanyalah Ponsel Pintar Anda dan APLIKASI GRATIS!</p>
+          <p className="text-lg text-gray-400">*Tidak Perlu Pengalaman!</p>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-10">
+            {[
+              { image: null, title: null },
+              { image: "/smart-phone-1.webp", title: "" },
+              { image: "/smart-phone-2.webp", title: "Mauricio dengan mudah mencapai 3,6 Juta Penayangan + bonus $1.000 hanya dalam hitungan hari!" },
+              { image: "/smart-phone-3.webp", title: "Jaren mendapatkan 1,2 Juta penayangan dan hampir 40 ribu pembagian sebagai pemula!" },
+              { image: "/smart-phone-4.jpg", title: "Megan dengan cepat mencetak 854 ribu penayangan tanpa pengikut yang banyak!" },
+            ].map((item, i) => (
+              item.image ? (
+                <div key={i} className="flex flex-col items-center gap-4">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-[800px] max-w-full h-auto rounded-lg"
+                  />
+                  <p className="text-center text-gray-300 font-semibold max-w-[800px]">{item.title}</p>
+                </div>
+              ) : null
             ))}
           </div>
         </div>
@@ -405,20 +425,23 @@ export default function ViralVFXPage() {
       {/* SECTION 7: PRICING / BUNDLE */}
       <section id="pricing" className="py-20 px-4">
         <div className="container mx-auto max-w-3xl">
+          <h2 className="text-3xl font-bold text-center mb-2">Bergabunglah Hari Ini untuk Hemat 90% & Dapatkan Bonus Tahun Baru Eksklusif! </h2>
+          <p className="text-center text-yellow-400 font-semibold mb-6">PROMO BERAKHIR MALAM INI</p>
+
+          <img src='/save-90.jpeg' alt='Save 90%' className='mx-auto mb-6 rounded-lg shadow-lg border border-gray-700' />
+
           <div className="bg-[#111] border-2 border-[#FE2C55] rounded-xl p-10 shadow-[0_10px_30px_rgba(254,44,85,0.1)]">
-            <h2 className="text-3xl font-bold text-center mb-2">Dapatkan Bundel Ini SEKARANG!</h2>
-            <p className="text-center text-yellow-400 font-semibold mb-6">PROMO TERBATAS!</p>
             <ul className="space-y-3 mb-8">
               {[
-                "✅ Kursus 7-Day Beginner Viral VFX (Senilai $297)",
-                "✅ BONUS #1: Kursus Viral Branding (Senilai $197)",
-                "✅ BONUS #2: Kursus Viral VFX PRO (Senilai $197)",
-                "✅ BONUS #3: Capcut Beginner Crashcourse (Senilai $147)",
-                "✅ BONUS #4: AI Content Strategist (Senilai $127)",
-                "✅ BONUS #5: Akses Aplikasi IOS/ANDROID (Senilai $186)",
-                "✅ BONUS #6: Template Latihan Tyler (Senilai $127)",
-                "✅ BONUS #7: Akses VIP Live Workshop (Senilai $497)",
-                "✅ BONUS #8: Komunitas Eksklusif (TAK TERNILAI)",
+                "☑️ Kursus VFX Viral Pemula 7 Hari (Senilai $297)",
+                "☑️ BONUS TAHUN BARU #1: Kursus Branding Viral (Senilai $197)",
+                "☑️ BONUS TAHUN BARU #2: Kursus VFX Viral PRO (Senilai $197)",
+                "☑️ BONUS TAHUN BARU #3: Kursus Singkat Capcut Pemula (Senilai $147)",
+                "☑️ BONUS TAHUN BARU #4: Asisten Pribadi Ahli Strategi Konten AI (Senilai $127)",
+                "☑️ BONUS TAHUN BARU #5: Akses Seumur Hidup Aplikasi iOS/ANDROID (Senilai $186)",
+                "☑️ BONUS TAHUN BARU #6: Templat Latihan Tyler (Senilai $127)",
+                "☑️ BONUS TAHUN BARU #7: Akses VIP Workshop Langsung (Senilai $497)",
+                "☑️ BONUS TAHUN BARU #8: Komunitas Eksklusif (TAK TERNILAI)",
               ].map((item, i) => (
                 <li key={i} className="flex items-center space-x-3">
                   <svg
@@ -438,14 +461,14 @@ export default function ViralVFXPage() {
             <div className="text-center my-6">
               <p className="text-gray-400 text-lg">TOTAL NILAI: $1825</p>
               <p className="text-6xl font-black text-white my-2">HANYA $97</p>
-              <p className="text-2xl font-bold text-red-500 line-through">$497</p>
+              <p className="text-2xl font-bold text-red-500 line-through">$997</p>
               <p className="text-lg text-white font-semibold">(Akses Seumur Hidup Instan!)</p>
             </div>
             <a
               href="#pricing"
               className="block w-full bg-gradient-to-r from-[#FE2C55] to-[#25F4EE] text-white font-bold px-8 py-4 rounded-lg text-center text-lg transition-all duration-300 shadow-[0_4px_15px_rgba(254,44,85,0.3)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(254,44,85,0.5)]"
             >
-              Amankan Penawaran Ini & Jadi Viral Sekarang! (Hemat 80%)
+              Saya Siap Menjadi VIRAL! (Hemat 90%)
             </a>
             <div className="text-center mt-4">
               <span className="text-sm text-gray-400">Garansi Uang Kembali 100%</span>
@@ -458,7 +481,7 @@ export default function ViralVFXPage() {
       <section id="what-you-get" className="py-16 px-4 bg-[#111]">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-white">
-            Apa Yang Kamu Dapatkan Dengan <span className="text-[#FE2C55]">Promo Tahun Baru Ini</span>
+            APA YANG ANDA DAPATKAN DENGAN <span className="text-[#FE2C55]">PROMO TAHUN BARU INI</span>
           </h2>
 
           <div className="mt-8 bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] border border-gray-800 rounded-xl p-6 md:p-8">
@@ -466,9 +489,9 @@ export default function ViralVFXPage() {
               {/* Left: Product Image */}
               <div className="flex justify-center">
                 <img
-                  src="/images/screenshot-20by-20lightshot.png"
+                  src="/7-days.webp"
                   alt="Paket Kursus 7 Hari Viral Creator Pemula"
-                  className="w-full max-w-md h-auto rounded-lg"
+                  className="w-full max-w-lg h-auto rounded-lg"
                 />
               </div>
 
@@ -547,104 +570,101 @@ export default function ViralVFXPage() {
               {[
                 {
                   day: "Hari 1",
-                  title: "Pelajari Fundamental",
+                  title: "Pelajari Dasar-Dasarnya",
                   points: [
-                    "Aplikasi & Gear Esensial",
-                    "Rekomendasi Gear untuk semua budget",
-                    "Pengaturan Kamera Terbaik",
-                    "2 prinsip kunci visual-effect yang kamu butuhkan untuk level up konten kamu dengan cepat (semua pemula wajib tahu ini)",
+                    "▶️ Aplikasi & Perlengkapan Esensial",
+                    "▶️ Rekomendasi Perlengkapan untuk semua anggaran",
+                    "▶️ Pengaturan Kamera Terbaik",
+                    "▶️ 2 prinsip utama efek visual yang Anda butuhkan untuk meningkatkan level konten Anda dengan cepat (semua pemula wajib mempelajari ini)",
                   ],
-                  image: "/capcut-interface-setup.jpg",
+                  image: "/day-1.webp",
                 },
                 {
                   day: "Hari 2",
-                  title: "Tugas Pertama Kamu",
+                  title: "Tugas Pertama Anda",
                   points: [
-                    "Memahami Segitiga Visual Effects (dan kenapa ini membuat pembuatan konten keren jadi simple)",
-                    "Cara menerapkan prinsip-prinsip simple ini ke video pertama kamu menggunakan template saya",
+                    "▶️ Memahami Segitiga Efek Visual (dan mengapa hal ini membuat pembuatan konten yang keren menjadi sederhana)",
+                    "▶️ Cara menerapkan prinsip-prinsip sederhana ini ke video pertama Anda menggunakan templat saya",
                   ],
-                  image: "/video-tracking-effect.jpg",
+                  image: "/day-2.webp",
                 },
                 {
                   day: "Hari 3",
-                  title: "Buat Objek Muncul",
+                  title: "Membuat Objek Muncul",
                   points: [
-                    "Pelajari cara membuat objek apapun muncul dengan jentikan jari",
-                    "Rahasia membuat transisi yang smooth dan profesional",
-                    "Template siap pakai untuk efek ini",
+                    "▶️ Pelajari cara membuat objek apa pun muncul hanya dengan jentikan jari",
+                    "▶️ Cara menggunakan efek ini untuk objek yang lebih besar, seperti memunculkan mobil, hewan peliharaan, atau orang (sangat menyenangkan dan menarik bagi penonton!)",
                   ],
-                  image: "/viral-video-transitions.jpg",
+                  image: "/day-3.webp",
                 },
                 {
                   day: "Hari 4",
-                  title: "Object Tracking",
+                  title: "Buat Kloning Pertama Anda",
                   points: [
-                    "Teknik tracking yang membuat konten kamu stand out",
-                    "Cara menambahkan elemen yang mengikuti gerakan",
-                    "Tips troubleshooting tracking yang tidak sempurna",
+                    "▶️ Buat duplikat diri Anda sendiri atau orang lain",
+                    "▶️ 5 cara menarik untuk menggunakan efek ini untuk mempromosikan merek Anda",
+                    "▶️ Contoh kloning siswa yang hebat (berdebat dengan kloning mereka, mengajari trik kepada kloning mereka, menunjukkan produk atau layanan kepada kloning mereka, + banyak lagi!)",
                   ],
-                  image: "/animated-text-effects.jpg",
+                  image: "/day-4.webp",
                 },
                 {
                   day: "Hari 5",
-                  title: "Efek Zoom & Punch",
+                  title: "Muncul Dari Sebuah Objek",
                   points: [
-                    "Buat zoom yang dramatic dan eye-catching",
-                    "Timing yang perfect untuk impact maksimal",
-                    "Kombinasi dengan efek lain untuk hasil viral",
+                    "▶️ Secara ajaib membuat cairan atau koin mengucur dari objek apa pun",
+                    "▶️ Cara menerapkan efek yang simpel dan mudah ini ke konten untuk audiens spesifik ANDA",
+                    "▶️ 3 Ide sederhana untuk menggunakan efek ini dalam video yang dapat Anda unggah sekarang (niche apa pun!)",
                   ],
-                  image: "/green-screen-editing.jpg",
+                  image: "/day-5.webp",
                 },
                 {
                   day: "Hari 6",
-                  title: "Slow Motion Cinematic",
+                  title: "Transformasi Objek",
                   points: [
-                    "Cara membuat slow motion yang smooth seperti film",
-                    "Speed ramps yang bikin audiens terpukau",
-                    "Pengaturan frame rate yang optimal",
+                    "▶️ Mengubah satu objek menjadi objek lain",
+                    "▶️ Transisi dua objek apa pun dengan mulus untuk membuat video menawan yang terasa seperti sulap bagi audiens Anda",
+                    "▶️ Cara menggunakan efek ini untuk membuat video yang INGIN dibagikan orang-orang kepada teman mereka",
                   ],
-                  image: "/slow-motion-speed-ramp.jpg",
+                  image: "/day-6.webp",
                 },
                 {
                   day: "Hari 7",
-                  title: "Clone & Duplicate Effects",
+                  title: "Transisi Tiang Ajaib (Magic Pole Transition)",
                   points: [
-                    "Teknik cloning diri sendiri dalam satu frame",
-                    "Efek duplicate yang bikin orang bertanya 'Gimana caranya?'",
-                    "Editing tricks untuk hasil yang seamless",
+                    "▶️ Transisi dari satu pakaian ke pakaian lainnya",
+                    "▶️ Transisi satu objek menjadi objek lainnya",
+                    "▶️ Bagaimana siswa saya menggunakan efek ini untuk membuat video yang mudah ditonton berulang kali (algoritma sangat menyukai ini!)",
                   ],
-                  image: "/advanced-vfx-effects.jpg",
+                  image: "/day-7.webp",
                 },
                 {
-                  day: "Hari 8",
-                  title: "Text & Graphics Animations",
+                  day: "HARI 8",
+                  title: "Efek Kecepatan Time Warp",
                   points: [
-                    "Animasi text yang attention-grabbing",
-                    "Kapan dan bagaimana menggunakan text overlay",
-                    "Library font dan graphics gratis terbaik",
+                    "▶️ Buat efek time warp yang luar biasa (kendalikan cuaca di langit, sambil tetap berada pada kecepatan normal)",
+                    "▶️ Cara menggunakan efek ini untuk menunjukkan berlalunya waktu & membuat video emosional yang menyentuh audiens Anda",
                   ],
-                  image: "/video-hook-formula.jpg",
+                  image: "/day-8.webp",
                 },
                 {
-                  day: "Hari 9",
-                  title: "Color Grading & Filters",
+                  day: "HARI 9",
+                  title: "Transisi Vertikal",
                   points: [
-                    "Poles video kamu dengan color grading cinematic",
-                    "Filter terbaik untuk berbagai mood dan niche",
-                    "Konsistensi branding melalui warna",
+                    "▶️ Buat transisi vertikal yang menawan dengan cepat",
+                    "▶️ Cara menggunakan efek ini untuk mengubah warna pakaian Anda, membuat objek muncul di tangan Anda, atau membuat anjing Anda muncul entah dari mana",
+                    "▶️ 5 aplikasi teratas dari efek ini yang disukai siswa saya (anggota keluarga yang muncul, hewan peliharaan yang menghilang, logo yang muncul di baju, + banyak lagi)",
                   ],
-                  image: "/color-grading-video.png",
+                  image: "/day-9.webp",
                 },
                 {
-                  day: "Hari 10",
-                  title: "Strategy Upload & Optimization",
+                  day: "HARI 10",
+                  title: "Pengungkapan Objek (Object Reveal)",
                   points: [
-                    "Pengaturan export terbaik untuk setiap platform",
-                    "Kapan waktu posting untuk engagement maksimal",
-                    "Strategi thumbnail dan caption yang convert",
-                    "Analytics tracking untuk growth berkelanjutan",
+                    "▶️ Buat objek atau teks muncul seperti sulap",
+                    "▶️ Jenis objek atau kutipan terbaik untuk diungkapkan demi keterlibatan (engagement) maksimal",
+                    "▶️ Cara menggunakan efek ini untuk mengungkapkan produk atau layanan Anda & meninggalkan kesan mendalam pada penonton",
                   ],
-                  image: "/video-export-upload.jpg",
+                  image: "/day-10.webp",
                 },
               ].map((lesson, i) => (
                 <div key={i} className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
@@ -690,37 +710,37 @@ export default function ViralVFXPage() {
           <div className="mt-16">
             <div className="text-center mb-8">
               <div className="inline-block bg-[#FE2C55] text-white text-sm font-bold px-4 py-1 rounded-full mb-3">
-                BONUS KURSUS #2
+                KURSUS BONUS #2:
               </div>
               <h3 className="text-3xl font-bold text-white">
-                Viral Branding <span className="text-[#25F4EE]">Masterclass</span>
+                Branding Viral <span className="text-[#25F4EE]">Masterclass</span>
               </h3>
-              <p className="text-gray-400 mt-2">4 Modul Lengkap - Nilai $297</p>
+              <p className="text-gray-400 mt-2">- Akses Seumur Hidup -</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
                   module: "Modul 1",
                   title: "Identitas Brand Kamu",
-                  description: "Temukan suara unik kamu dan buat brand yang memorable di niche kamu",
+                  description: "✅ Pelajari Metode Rahasia yang saya gunakan untuk Melejitkan lebih dari 500 ribu Pengikut hanya dalam 6 Bulan",
                   gif: "/brand-identity-design.png",
                 },
                 {
                   module: "Modul 2",
                   title: "Visual Branding",
-                  description: "Desain logo, warna, dan estetika visual yang konsisten dan profesional",
+                  description: "✅ Bangun Merek Anda dan jadilah otoritas yang dicintai di bidang Anda",
                   gif: "/visual-branding-design.jpg",
                 },
                 {
                   module: "Modul 3",
                   title: "Content Pillars",
-                  description: "Bangun strategi konten yang kuat dengan pilar-pilar yang jelas",
+                  description: "Pasarkan Bisnis Anda di Media Sosial menggunakan metode pertumbuhan 10x rahasia saya",
                   gif: "/content-strategy-pillars.jpg",
                 },
                 {
                   module: "Modul 4",
                   title: "Brand Consistency",
-                  description: "Jaga konsistensi brand di semua platform untuk growth maksimal",
+                  description: "Tampil Menonjol dari Kompetitor Anda",
                   gif: "/brand-consistency.jpg",
                 },
               ].map((mod, i) => (
@@ -743,10 +763,164 @@ export default function ViralVFXPage() {
             </div>
           </div>
 
+          {/* // Strategi Branding Media Sosial */}
+
+          <div className="mt-16">
+            <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+              Kurikulum Kursus <span className="text-[#FE2C55]">10 Hari</span>
+            </h3>
+            <div className="space-y-16 md:space-y-20">
+              {[
+                {
+                  day: "Hari 1",
+                  title: "Pelajari Dasar-Dasarnya",
+                  points: [
+                    "▶️ Aplikasi & Perlengkapan Esensial",
+                    "▶️ Rekomendasi Perlengkapan untuk semua anggaran",
+                    "▶️ Pengaturan Kamera Terbaik",
+                    "▶️ 2 prinsip utama efek visual yang Anda butuhkan untuk meningkatkan level konten Anda dengan cepat (semua pemula wajib mempelajari ini)",
+                  ],
+                  image: "/day-1.webp",
+                },
+                {
+                  day: "Hari 2",
+                  title: "Tugas Pertama Anda",
+                  points: [
+                    "▶️ Memahami Segitiga Efek Visual (dan mengapa hal ini membuat pembuatan konten yang keren menjadi sederhana)",
+                    "▶️ Cara menerapkan prinsip-prinsip sederhana ini ke video pertama Anda menggunakan templat saya",
+                  ],
+                  image: "/day-2.webp",
+                },
+                {
+                  day: "Hari 3",
+                  title: "Membuat Objek Muncul",
+                  points: [
+                    "▶️ Pelajari cara membuat objek apa pun muncul hanya dengan jentikan jari",
+                    "▶️ Cara menggunakan efek ini untuk objek yang lebih besar, seperti memunculkan mobil, hewan peliharaan, atau orang (sangat menyenangkan dan menarik bagi penonton!)",
+                  ],
+                  image: "/day-3.webp",
+                },
+                {
+                  day: "Hari 4",
+                  title: "Buat Kloning Pertama Anda",
+                  points: [
+                    "▶️ Buat duplikat diri Anda sendiri atau orang lain",
+                    "▶️ 5 cara menarik untuk menggunakan efek ini untuk mempromosikan merek Anda",
+                    "▶️ Contoh kloning siswa yang hebat (berdebat dengan kloning mereka, mengajari trik kepada kloning mereka, menunjukkan produk atau layanan kepada kloning mereka, + banyak lagi!)",
+                  ],
+                  image: "/day-4.webp",
+                },
+                {
+                  day: "Hari 5",
+                  title: "Muncul Dari Sebuah Objek",
+                  points: [
+                    "▶️ Secara ajaib membuat cairan atau koin mengucur dari objek apa pun",
+                    "▶️ Cara menerapkan efek yang simpel dan mudah ini ke konten untuk audiens spesifik ANDA",
+                    "▶️ 3 Ide sederhana untuk menggunakan efek ini dalam video yang dapat Anda unggah sekarang (niche apa pun!)",
+                  ],
+                  image: "/day-5.webp",
+                },
+                {
+                  day: "Hari 6",
+                  title: "Transformasi Objek",
+                  points: [
+                    "▶️ Mengubah satu objek menjadi objek lain",
+                    "▶️ Transisi dua objek apa pun dengan mulus untuk membuat video menawan yang terasa seperti sulap bagi audiens Anda",
+                    "▶️ Cara menggunakan efek ini untuk membuat video yang INGIN dibagikan orang-orang kepada teman mereka",
+                  ],
+                  image: "/day-6.webp",
+                },
+                {
+                  day: "Hari 7",
+                  title: "Transisi Tiang Ajaib (Magic Pole Transition)",
+                  points: [
+                    "▶️ Transisi dari satu pakaian ke pakaian lainnya",
+                    "▶️ Transisi satu objek menjadi objek lainnya",
+                    "▶️ Bagaimana siswa saya menggunakan efek ini untuk membuat video yang mudah ditonton berulang kali (algoritma sangat menyukai ini!)",
+                  ],
+                  image: "/day-7.webp",
+                },
+                {
+                  day: "HARI 8",
+                  title: "Efek Kecepatan Time Warp",
+                  points: [
+                    "▶️ Buat efek time warp yang luar biasa (kendalikan cuaca di langit, sambil tetap berada pada kecepatan normal)",
+                    "▶️ Cara menggunakan efek ini untuk menunjukkan berlalunya waktu & membuat video emosional yang menyentuh audiens Anda",
+                  ],
+                  image: "/day-8.webp",
+                },
+                {
+                  day: "HARI 9",
+                  title: "Transisi Vertikal",
+                  points: [
+                    "▶️ Buat transisi vertikal yang menawan dengan cepat",
+                    "▶️ Cara menggunakan efek ini untuk mengubah warna pakaian Anda, membuat objek muncul di tangan Anda, atau membuat anjing Anda muncul entah dari mana",
+                    "▶️ 5 aplikasi teratas dari efek ini yang disukai siswa saya (anggota keluarga yang muncul, hewan peliharaan yang menghilang, logo yang muncul di baju, + banyak lagi)",
+                  ],
+                  image: "/day-9.webp",
+                },
+                {
+                  day: "HARI 10",
+                  title: "Pengungkapan Objek (Object Reveal)",
+                  points: [
+                    "▶️ Buat objek atau teks muncul seperti sulap",
+                    "▶️ Jenis objek atau kutipan terbaik untuk diungkapkan demi keterlibatan (engagement) maksimal",
+                    "▶️ Cara menggunakan efek ini untuk mengungkapkan produk atau layanan Anda & meninggalkan kesan mendalam pada penonton",
+                  ],
+                  image: "/day-10.webp",
+                },
+              ].map((lesson, i) => (
+                <div key={i} className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+                  <div className="order-2 lg:order-1 space-y-4">
+                    <div>
+                      <h4 className="text-xl md:text-2xl font-bold text-white mb-2">{lesson.day.toUpperCase()}:</h4>
+                      <h5 className="text-2xl md:text-3xl font-bold text-white pb-4 border-b border-gray-800/50">
+                        {lesson.title}
+                      </h5>
+                    </div>
+                    <ul className="space-y-3 pt-2">
+                      {lesson.points.map((point, j) => (
+                        <li key={j} className="flex items-start gap-3">
+                          <div className="flex-shrink-0 w-5 h-5 rounded bg-[#25F4EE]/20 flex items-center justify-center mt-1">
+                            <svg
+                              className="w-3 h-3 text-[#25F4EE]"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <span className="text-gray-300 text-sm md:text-base leading-relaxed">{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="order-1 lg:order-2">
+                    <div className="relative aspect-video w-full max-w-[500px] mx-auto lg:mx-0 lg:ml-auto">
+                      <img
+                        src={lesson.image || "/placeholder.svg"}
+                        alt={lesson.title}
+                        className="w-full h-full object-cover rounded-lg border border-gray-800/50 shadow-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+
+
+
+
+
+
+
           <div className="mt-16">
             <div className="text-center mb-8">
               <div className="inline-block bg-[#FE2C55] text-white text-sm font-bold px-4 py-1 rounded-full mb-3">
-                BONUS KURSUS #3
+                KURSUS BONUS #3
               </div>
               <h3 className="text-3xl font-bold text-white">
                 Viral VFX <span className="text-[#25F4EE]">PRO</span>
@@ -758,33 +932,33 @@ export default function ViralVFXPage() {
                 {
                   category: "Efek Tracking",
                   count: "8 Efek",
-                  description: "Tracking objek, wajah, dan gerakan yang smooth dan profesional",
+                  description: "✅ Pelajari Lebih BANYAK Lagi Efek yang Disukai Orang-orang & Tingkatkan Keterampilan Anda ke Level Berikutnya",
                   gif: "/object-tracking-effects.jpg",
                 },
                 {
                   category: "Efek Transisi",
                   count: "6 Efek",
-                  description: "Transisi viral yang bikin video kamu stand out dari crowd",
+                  description: "✅ Buat Efek yang Menarik Perhatian untuk Mempromosikan Bisnis dan Produk Anda",
                   gif: "/transition-effects.jpg",
                 },
                 {
                   category: "Efek Teks 3D",
                   count: "5 Efek",
-                  description: "Teks 3D yang menakjubkan dengan animasi profesional",
+                  description: "✅ Gunakan AI untuk mempercepat proses pengeditan",
                   gif: "/3d-text-animation.jpg",
                 },
-                {
-                  category: "Efek Clone",
-                  count: "3 Efek",
-                  description: "Duplikat diri kamu di video dengan efek clone yang realistis",
-                  gif: "/placeholder.svg?height=200&width=300",
-                },
-                {
-                  category: "Efek Hollywood",
-                  count: "4 Efek",
-                  description: "VFX tingkat film untuk bikin konten kamu terlihat seperti blockbuster",
-                  gif: "/placeholder.svg?height=200&width=300",
-                },
+                // {
+                //   category: "Efek Clone",
+                //   count: "3 Efek",
+                //   description: "✅ Duplikat diri kamu di video dengan efek clone yang realistis",
+                //   gif: "/placeholder.svg?height=200&width=300",
+                // },
+                // {
+                //   category: "Efek Hollywood",
+                //   count: "4 Efek",
+                //   description: "✅ VFX tingkat film untuk bikin konten kamu terlihat seperti blockbuster",
+                //   gif: "/placeholder.svg?height=200&width=300",
+                // },
               ].map((cat, i) => (
                 <div
                   key={i}
@@ -804,6 +978,154 @@ export default function ViralVFXPage() {
               ))}
             </div>
           </div>
+
+          {/* Efek Kekuatan Super */}
+
+          <div className="mt-16">
+            <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+              Kurikulum Kursus <span className="text-[#FE2C55]">10 Hari</span>
+            </h3>
+            <div className="space-y-16 md:space-y-20">
+              {[
+                {
+                  day: "Hari 1",
+                  title: "Pelajari Dasar-Dasarnya",
+                  points: [
+                    "▶️ Aplikasi & Perlengkapan Esensial",
+                    "▶️ Rekomendasi Perlengkapan untuk semua anggaran",
+                    "▶️ Pengaturan Kamera Terbaik",
+                    "▶️ 2 prinsip utama efek visual yang Anda butuhkan untuk meningkatkan level konten Anda dengan cepat (semua pemula wajib mempelajari ini)",
+                  ],
+                  image: "/day-1.webp",
+                },
+                {
+                  day: "Hari 2",
+                  title: "Tugas Pertama Anda",
+                  points: [
+                    "▶️ Memahami Segitiga Efek Visual (dan mengapa hal ini membuat pembuatan konten yang keren menjadi sederhana)",
+                    "▶️ Cara menerapkan prinsip-prinsip sederhana ini ke video pertama Anda menggunakan templat saya",
+                  ],
+                  image: "/day-2.webp",
+                },
+                {
+                  day: "Hari 3",
+                  title: "Membuat Objek Muncul",
+                  points: [
+                    "▶️ Pelajari cara membuat objek apa pun muncul hanya dengan jentikan jari",
+                    "▶️ Cara menggunakan efek ini untuk objek yang lebih besar, seperti memunculkan mobil, hewan peliharaan, atau orang (sangat menyenangkan dan menarik bagi penonton!)",
+                  ],
+                  image: "/day-3.webp",
+                },
+                {
+                  day: "Hari 4",
+                  title: "Buat Kloning Pertama Anda",
+                  points: [
+                    "▶️ Buat duplikat diri Anda sendiri atau orang lain",
+                    "▶️ 5 cara menarik untuk menggunakan efek ini untuk mempromosikan merek Anda",
+                    "▶️ Contoh kloning siswa yang hebat (berdebat dengan kloning mereka, mengajari trik kepada kloning mereka, menunjukkan produk atau layanan kepada kloning mereka, + banyak lagi!)",
+                  ],
+                  image: "/day-4.webp",
+                },
+                {
+                  day: "Hari 5",
+                  title: "Muncul Dari Sebuah Objek",
+                  points: [
+                    "▶️ Secara ajaib membuat cairan atau koin mengucur dari objek apa pun",
+                    "▶️ Cara menerapkan efek yang simpel dan mudah ini ke konten untuk audiens spesifik ANDA",
+                    "▶️ 3 Ide sederhana untuk menggunakan efek ini dalam video yang dapat Anda unggah sekarang (niche apa pun!)",
+                  ],
+                  image: "/day-5.webp",
+                },
+                {
+                  day: "Hari 6",
+                  title: "Transformasi Objek",
+                  points: [
+                    "▶️ Mengubah satu objek menjadi objek lain",
+                    "▶️ Transisi dua objek apa pun dengan mulus untuk membuat video menawan yang terasa seperti sulap bagi audiens Anda",
+                    "▶️ Cara menggunakan efek ini untuk membuat video yang INGIN dibagikan orang-orang kepada teman mereka",
+                  ],
+                  image: "/day-6.webp",
+                },
+                {
+                  day: "Hari 7",
+                  title: "Transisi Tiang Ajaib (Magic Pole Transition)",
+                  points: [
+                    "▶️ Transisi dari satu pakaian ke pakaian lainnya",
+                    "▶️ Transisi satu objek menjadi objek lainnya",
+                    "▶️ Bagaimana siswa saya menggunakan efek ini untuk membuat video yang mudah ditonton berulang kali (algoritma sangat menyukai ini!)",
+                  ],
+                  image: "/day-7.webp",
+                },
+                {
+                  day: "HARI 8",
+                  title: "Efek Kecepatan Time Warp",
+                  points: [
+                    "▶️ Buat efek time warp yang luar biasa (kendalikan cuaca di langit, sambil tetap berada pada kecepatan normal)",
+                    "▶️ Cara menggunakan efek ini untuk menunjukkan berlalunya waktu & membuat video emosional yang menyentuh audiens Anda",
+                  ],
+                  image: "/day-8.webp",
+                },
+                {
+                  day: "HARI 9",
+                  title: "Transisi Vertikal",
+                  points: [
+                    "▶️ Buat transisi vertikal yang menawan dengan cepat",
+                    "▶️ Cara menggunakan efek ini untuk mengubah warna pakaian Anda, membuat objek muncul di tangan Anda, atau membuat anjing Anda muncul entah dari mana",
+                    "▶️ 5 aplikasi teratas dari efek ini yang disukai siswa saya (anggota keluarga yang muncul, hewan peliharaan yang menghilang, logo yang muncul di baju, + banyak lagi)",
+                  ],
+                  image: "/day-9.webp",
+                },
+                {
+                  day: "HARI 10",
+                  title: "Pengungkapan Objek (Object Reveal)",
+                  points: [
+                    "▶️ Buat objek atau teks muncul seperti sulap",
+                    "▶️ Jenis objek atau kutipan terbaik untuk diungkapkan demi keterlibatan (engagement) maksimal",
+                    "▶️ Cara menggunakan efek ini untuk mengungkapkan produk atau layanan Anda & meninggalkan kesan mendalam pada penonton",
+                  ],
+                  image: "/day-10.webp",
+                },
+              ].map((lesson, i) => (
+                <div key={i} className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+                  <div className="order-2 lg:order-1 space-y-4">
+                    <div>
+                      <h4 className="text-xl md:text-2xl font-bold text-white mb-2">{lesson.day.toUpperCase()}:</h4>
+                      <h5 className="text-2xl md:text-3xl font-bold text-white pb-4 border-b border-gray-800/50">
+                        {lesson.title}
+                      </h5>
+                    </div>
+                    <ul className="space-y-3 pt-2">
+                      {lesson.points.map((point, j) => (
+                        <li key={j} className="flex items-start gap-3">
+                          <div className="flex-shrink-0 w-5 h-5 rounded bg-[#25F4EE]/20 flex items-center justify-center mt-1">
+                            <svg
+                              className="w-3 h-3 text-[#25F4EE]"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <span className="text-gray-300 text-sm md:text-base leading-relaxed">{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="order-1 lg:order-2">
+                    <div className="relative aspect-video w-full max-w-[500px] mx-auto lg:mx-0 lg:ml-auto">
+                      <img
+                        src={lesson.image || "/placeholder.svg"}
+                        alt={lesson.title}
+                        className="w-full h-full object-cover rounded-lg border border-gray-800/50 shadow-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
 
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] border border-gray-800 rounded-lg p-6 text-center">
@@ -1016,7 +1338,7 @@ export default function ViralVFXPage() {
             juga menjamin kesuksesan Anda lebih cepat!
           </p>
           <h2 className="text-[2.5rem] font-black leading-tight mt-16 mb-6">
-            Panduan Langkah demi Langkah untuk Memastikan Anda Sukses!
+            Panduan Langkah Demi Langkah untuk Memastikan Anda Berhasil!
           </h2>
           <div className="bg-gray-800 aspect-video rounded-lg flex items-center justify-center text-gray-500 max-w-2xl mx-auto">
             (Placeholder untuk Gambar/Visual Panduan)
@@ -1030,12 +1352,12 @@ export default function ViralVFXPage() {
           <h2 className="text-[2.5rem] font-black leading-tight text-center mb-12">Untuk Siapa Kursus Ini</h2>
           <ul className="space-y-4 text-lg max-w-2xl mx-auto">
             {[
-              'Anda seorang <span class="font-bold text-white">yang proaktif</span>',
+              'Anda adalah seorang yang bersemangat <span class="font-bold text-white">mengejar tujuan (go-getter)</span>',
               'Anda ingin <span class="font-bold text-white">menghemat waktu dan uang</span>',
-              'Anda ingin konten Anda <span class="font-bold text-white">tampil beda</span>',
+              'Anda ingin konten Anda <span class="font-bold text-white">tampil menonjol</span>',
               'Anda ingin <span class="font-bold text-white">mengembangkan bisnis Anda</span>',
               'Anda <span class="font-bold text-white">menghargai waktu</span> dan mengikuti rencana yang terbukti',
-              'Anda ingin <span class="font-bold text-white">meningkatkan skill editing</span> Anda (Capcut, Premier Pro, Davinci Resolve, atau program APAPUN)',
+              'Anda ingin <span class="font-bold text-white">meningkatkan keterampilan pengeditan</span> Anda (Capcut, Premier Pro, Davinci Resolve, atau program APAPUN)',
               'Niche apa pun yang ingin <span class="font-bold text-white">meningkatkan video mereka</span>',
             ].map((item, i) => (
               <li key={i} className="flex items-start space-x-3">
@@ -1057,11 +1379,13 @@ export default function ViralVFXPage() {
       {/* SECTION 13: FINAL CTA */}
       <section id="final-cta" className="py-20 px-4">
         <div className="container mx-auto max-w-3xl">
+          <img src='/save-90.jpeg' alt='Save 90%' className='mx-auto mb-6 rounded-lg shadow-lg border border-gray-700' />
           <div className="bg-[#111] border-2 border-[#FE2C55] rounded-xl p-10 shadow-[0_10px_30px_rgba(254,44,85,0.1)]">
+
             <h2 className="text-3xl font-bold text-center mb-2">
-              PROMO <span className="text-[#FE2C55]">Waktu Terbatas</span>
+              PROMO <span className="text-[#FE2C55]">TAHUN BARU</span>
             </h2>
-            <p className="text-center text-yellow-400 font-semibold mb-6">Hemat 80% Hari Ini!</p>
+            <p className="text-center text-yellow-400 font-semibold mb-6">Penawaran Waktu Terbatas</p>
             <div className="text-center my-6">
               <p className="text-gray-400 text-lg">TOTAL NILAI: $1825</p>
               <p className="text-6xl font-black text-white my-2">HANYA $97</p>
@@ -1139,19 +1463,14 @@ export default function ViralVFXPage() {
         <div className="container mx-auto max-w-5xl text-center text-gray-500 text-sm">
           <p className="mb-4">© 2023 vfxCreators. Seluruh hak cipta.</p>
           <p className="mb-4">
-            Dengan mengunjungi halaman ini, Anda menyetujui syarat dan ketentuan, kebijakan privasi & disclaimer
-            penghasilan.
+            Dengan mengunjungi halaman ini, Anda menyetujui syarat dan ketentuan, kebijakan privasi & sanggahan penghasilan.
           </p>
-          <p className="mb-4">
-            Situs ini bukan bagian dari situs web Facebook atau Facebook Inc. Selain itu, situs ini TIDAK didukung oleh
-            Facebook dengan cara apa pun. FACEBOOK adalah merek dagang dari FACEBOOK, Inc.
+          <p className="mb-4">Situs ini bukan bagian dari situs web Facebook atau Facebook Inc. Selain itu, situs ini TIDAK didukung oleh Facebook dengan cara apa pun. FACEBOOK adalah merek dagang dari FACEBOOK, Inc.
+
+
           </p>
           <p>
-            DISCLAIMER: Angka penjualan yang tertera di halaman ini adalah angka penjualan pribadi kami dan dalam
-            beberapa kasus angka penjualan klien sebelumnya atau yang ada. Harap dipahami bahwa hasil ini tidak biasa.
-            Kami tidak menyiratkan Anda akan menduplikasinya. Rata-rata orang yang membeli informasi "cara" mendapatkan
-            sedikit atau tidak ada hasil. Hasil Anda akan bervariasi dan bergantung pada banyak faktor. Semua bisnis
-            memiliki risiko serta upaya dan tindakan yang besar dan konsisten.
+            SANGGAHAN (DISCLAIMER): Angka penjualan yang tertera di halaman arahan ini dan yang dibahas dalam program Viral VFX adalah angka penjualan pribadi kami dan dalam beberapa kasus merupakan angka penjualan dari klien terdahulu atau yang sudah ada. Harap dipahami bahwa hasil ini tidak tipikal. Kami tidak menyiratkan bahwa Anda akan menduplikasi hasil tersebut (atau melakukan apa pun dalam hal tersebut). Rata-rata orang yang membeli informasi "cara melakukan sesuatu" mendapatkan sedikit atau bahkan tidak ada hasil sama sekali. Kami menggunakan referensi ini hanya untuk tujuan contoh. Hasil Anda akan bervariasi dan bergantung pada banyak faktor termasuk namun tidak terbatas pada latar belakang, pengalaman, dan etos kerja Anda. Semua bisnis mengandung risiko serta membutuhkan upaya dan tindakan yang masif dan konsisten. Jika Anda tidak bersedia menerima hal tersebut, mohon TIDAK MEMBELI KURSUS Viral VFX.
           </p>
         </div>
       </footer>
