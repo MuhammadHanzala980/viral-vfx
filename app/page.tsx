@@ -1,5 +1,7 @@
 "use client"
 
+import { de } from "date-fns/locale"
+import { describe } from "node:test"
 import type React from "react"
 
 import { useState, useEffect } from "react"
@@ -288,15 +290,15 @@ export default function ViralVFXPage() {
             {[
               {
                 text: '"Saya sekarang membuat konten yang membuat istri, anak-anak, dan teman-teman saya kagum! Dan melakukannya semua dari HP saya. Salah satu video saya mendapat 1,2 juta views menggunakan teknik ini!"',
-                author: "Jaren A.",
+                author: "Fauzan Nashir.",
               },
               {
                 text: '"Ini LUAR BIASA! Saya telah membuat 2 video sejauh ini dan saya mendapat begitu banyak perhatian dari orang-orang yang tertarik dengan apa yang saya jual! Saya suka ini!"',
-                author: "Lavonne P.",
+                author: "Larasati Putri.",
               },
               {
                 text: '"Saya tidak bisa memberi tahu Anda betapa banyaknya nilai yang ada di sini. Bahkan seseorang tanpa pengalaman akan bisa mengikuti. Saya berikan ini ke putra saya yang berusia 13 tahun dan dia sudah membuat video keren!"',
-                author: "Phill N.",
+                author: "Jaka A.",
               },
             ].map((testimonial, i) => (
               <div key={i} className="bg-[#1a1a1a] border border-[#333] rounded-xl p-8">
@@ -1235,36 +1237,76 @@ export default function ViralVFXPage() {
 
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
+                    <svg
+                      className="text-[#25F4EE] w-6 h-6 flex-shrink-0 mt-0.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
                     <span className="text-gray-300">
-                      <span className="font-bold text-white">◾</span>
+                      
                       Berubah dari pemula menjadi ninja pengeditan di CAPCUT bahkan jika Anda tidak paham teknologi dan buruk dalam mengedit (Aplikasi GRATIS #1)
                     </span>
                   </li>
 
                   <li className="flex items-start gap-3">
+                    <svg
+                      className="text-[#25F4EE] w-6 h-6 flex-shrink-0 mt-0.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
                     <span className="text-gray-300">
-                      <span className="font-bold text-white">◾</span>
+                      
                       Secara instan memberikan strategi konten yang sempurna untuk niche dan audiens unik ANDA, sehingga Anda selalu tahu persis apa yang harus diunggah untuk mendapatkan pertumbuhan media sosial yang terasa luar biasa!
                     </span>
                   </li>
 
                   <li className="flex items-start gap-3">
+                    <svg
+                      className="text-[#25F4EE] w-6 h-6 flex-shrink-0 mt-0.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
                     <span className="text-gray-300">
-                      <span className="font-bold text-white">◾</span>
+                      
                       Menghasilkan daftar HOOK VIRAL dengan cepat yang akan langsung menarik perhatian dan membuat penonton Anda ketagihan dengan konten Anda
                     </span>
                   </li>
 
                   <li className="flex items-start gap-3">
+                    <svg
+                      className="text-[#25F4EE] w-6 h-6 flex-shrink-0 mt-0.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
                     <span className="text-gray-300">
-                      <span className="font-bold text-white">◾</span>
+                      
                       Panduan langkah-demi-langkah tentang cara menyusun struktur reels Anda sehingga Anda tampil menonjol dan mendapatkan jutaan pasang mata pada merek Anda
                     </span>
                   </li>
 
                   <li className="flex items-start gap-3">
+                    <svg
+                      className="text-[#25F4EE] w-6 h-6 flex-shrink-0 mt-0.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
                     <span className="text-gray-300">
-                      <span className="font-bold text-white">◾</span>
+                      
                       Menghasilkan teks (caption) yang sempurna untuk unggahan Anda setiap saat, sehingga konten Anda dijamin mendapatkan keterlibatan (engagement) sebanyak mungkin
                     </span>
                   </li>
@@ -1413,7 +1455,7 @@ export default function ViralVFXPage() {
               { image: "/woa-1.webp", title: "" },
               { image: "/woa-2.webp", title: "Berhasil untuk Pemilik Bisnis, Kreator Konten, dan Influencer di NICHE APA PUN!" },
               { image: "/woa-3.webp", title: "Dan Anda TIDAK Membutuhkan Pengikut yang Banyak!" },
-             ].map((item, i) => (
+            ].map((item, i) => (
               item.image ? (
                 <div key={i} className="flex flex-col items-center gap-4">
                   <p className="text-center text-gray-300 text-3xl mb-6 font-semibold max-w-[800px]">{item.title}</p>
@@ -1429,134 +1471,229 @@ export default function ViralVFXPage() {
         </div>
       </section>
 
-      {/* SECTION 9: EARLY ADOPTER BONUS */}
-      <section id="early-adopter-bonus" className="py-20 bg-gray-900 px-4">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-[2.5rem] font-black leading-tight text-center mb-6">
-            BONUS PENJUALAN EARLY ADOPTER <span className="text-[#FE2C55]">Waktu Terbatas</span>
+
+      <section id="new-year-sale-bonuses" className="py-20 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-[2.5rem] font-black leading-tight text-center mb-12">
+            BONUS PENJUALAN <span className="text-[#FE2C55]">TAHUN BARU</span>
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
             {[
               {
+                image: "/nysale-1.webp",
                 title: "Komunitas VIP Pribadi",
-                text: "Dapatkan jawaban atas semua pertanyaan Anda 24/7 dalam grup pribadi sehingga Anda tidak pernah menebak-nebak atau membuang waktu! (nilai: TAK TERNILAI)",
+                description: "Dapatkan jawaban atas semua pertanyaan Anda 24/7 dalam grup pribadi sehingga Anda tidak pernah menebak-nebak atau membuang waktu! (nilai: TAK TERNILAI)",
               },
               {
+                image: "/nysale-2.webp",
                 title: "File Video Tyler",
-                text: "Saya menyediakan file yang telah saya rekam untuk proyek-proyek ini, sehingga Anda dapat berlatih editing tanpa perlu merekam! (nilai $127)",
+                description: "Saya menyediakan file yang telah saya rekam untuk proyek-proyek ini, sehingga Anda dapat berlatih editing tanpa perlu merekam! (nilai $127)",
               },
               {
+                image: "/nysale-3.jpg",
                 title: "Akses Langsung ke Pro Industri",
-                text: "Ini adalah sesuatu yang akan menghemat banyak waktu Anda. Saya jamin saya tahu jawaban atas semua pertanyaan Anda! (nilai: TAK TERNILAI)",
+                description: "Ini adalah sesuatu yang akan menghemat banyak waktu Anda. Saya jamin saya tahu jawaban atas semua pertanyaan Anda! (nilai: TAK TERNILAI)",
               },
               {
+                image: "/nysale-4.webp",
                 title: "Workshop Langsung",
-                text: "Dapatkan Pelatihan Langsung dan T&J dari Tyler! (nilai $497)",
-                span: 1,
+                description: "Dapatkan Pelatihan Langsung dan T&J dari Tyler! (nilai $497)",
               },
               {
+                image: "/nysale-5.webp",
                 title: "Penawaran 3 untuk 1",
-                text: "Akses seumur hidup dan semua pembaruan di masa mendatang ke 3 kursus terpopuler saya! (nilai $497)",
-                span: 2,
+                description: "Akses seumur hidup dan semua pembaruan di masa mendatang ke 3 kursus terpopuler saya! (nilai $497)",
               },
             ].map((bonus, i) => (
-              <div
-                key={i}
-                className={`bg-[#1a1a1a] rounded-lg border border-[#333] text-center ${bonus.span === 2 ? "md:col-span-2" : ""}`}
-              >
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full text-left p-6 font-semibold text-lg flex justify-between items-center"
-                >
-                  <span>{bonus.title}</span>
-                  <svg
-                    className={`w-6 h-6 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </button>
-                {openFaq === i && <div className="px-6 pb-6 text-gray-400 leading-relaxed">{bonus.text}</div>}
+              <div key={i} className="bg-[#1a1a1a] border border-[#333] rounded-xl overflow-hidden hover:border-[#FE2C55] transition-colors">
+                <div className="aspect-video bg-gray-800 overflow-hidden">
+                  <img src={bonus.image || "/placeholder.svg"} alt={bonus.title} className="w-full h-full object-cover" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-3">{bonus.title}</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed">{bonus.description}</p>
+                </div>
               </div>
             ))}
           </div>
           <div className="text-center mt-12">
+            <p className="text-2xl text-gray-300 mb-6 font-semibold">
+              Tidak Perlu Pengalaman!
+            </p>
             <a
               href="#pricing"
               className="inline-block bg-gradient-to-r from-[#FE2C55] to-[#25F4EE] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-[0_4px_15px_rgba(254,44,85,0.3)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(254,44,85,0.5)]"
             >
-              Ya, Saya Mau Penawaran Ini Selagi Masih Ada! (HEMAT 80%)
+              Ya, Saya Ingin Penawaran Ini Sebelum Hilang! (Hemat 90%)
             </a>
           </div>
         </div>
       </section>
 
-      {/* SECTION 10: INSTRUCTOR */}
-      <section id="instructor" className="py-20 px-4">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-[2.5rem] font-black leading-tight text-center mb-12">Temui Instruktur Anda</h2>
-          <div className="md:flex md:space-x-8 items-center">
-            <div className="md:w-1/3 mb-6 md:mb-0">
-              <img
-                src="https://placehold.co/400x400/1a1a1a/e0e0e0?text=Tyler+Tometich"
-                alt="Tyler Tometich"
-                className="rounded-lg shadow-lg w-full"
-              />
-            </div>
-            <div className="md:w-2/3">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Tyler Tometich: Dari Nol Skill ke Proyek Hollywood
-              </h3>
-              <p className="text-gray-300 mb-4 leading-relaxed">
-                Hai! Saya Tyler. Seperti banyak orang, saya mulai dari nol, membuat video aneh di teman-teman di kelas
-                9. Jalan saya tidak selalu lurus; Saya menghadapi tantangan, bahkan putus kuliah. Tetapi hasrat saya
-                untuk membuat video membawa saya kembali, dan saya lulus dengan pujian pada tahun 2014.
-              </p>
-              <p className="text-gray-300 mb-4 leading-relaxed">
-                Perjalanan saya membawa saya ke jantung industri hiburan di Los Angeles, membuat kampanye untuk raksasa
-                seperti Marvel dan Disney. Thor, Ant-Man, Captain Marvel - itu saya di belakang layar! Saya menguasai
-                tidak hanya seni efek visual, motion graphics, dan animasi 3D, tetapi juga kemampuan untuk bekerja
-                cerdas dan memenuhi tenggat waktu yang ketat.
-              </p>
-              <p className="text-gray-300 mb-6 leading-relaxed">
-                Tapi pengubah permainan sesungguhnya? Belajar dari orang lain. Mengikuti seniman berpengalaman,
-                mengajukan pertanyaan, dan menyerap kebijaksanaan mereka mempercepat pertumbuhan saya.
-              </p>
-              <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
-                <p className="text-lg italic text-gray-300">
-                  "Tyler luar biasa! ...Kemampuannya untuk berbicara kepada berbagai audiens... pemahamannya yang
-                  mendalam tentang kreasi mobile-first dan Reels-first patut dicontoh dan dapat membantu merek apa pun
-                  meningkatkan strategi kreatifnya."
-                </p>
-                <p className="font-bold text-white mt-4">- Jennie White, META</p>
+
+      <section id="community-reviews" className="py-20 px-4 bg-gray-900">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-[2.5rem] font-black leading-tight text-center mb-4">
+            Bergabunglah dengan Komunitas Kami yang Inspiratif dan Aktif dengan Lebih dari 22.500+ Siswa yang Puas!
+          </h2>
+          <p className="text-center text-gray-400 text-lg mb-12">
+            Lihat apa yang mereka katakan! 👇
+          </p>
+
+          {/* Video Section */}
+          <div className="mb-16">
+            <div className="bg-gray-800 border border-gray-700 rounded-lg aspect-video max-w-4xl mx-auto mb-8 flex items-center justify-center">
+              <div className="text-center text-gray-400">
+                <svg className="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 2a8 8 0 100 16 8 8 0 000 -16zm-1 11.5v-7l5 3.5-5 3.5z"></path>
+                </svg>
+                <p className="mt-2">Testimonial Video dari Siswa</p>
+                <p className="text-sm">(Placeholder Video)</p>
               </div>
             </div>
+          </div>
+
+          {/* Reviews Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                name: "Sarah M.",
+                text: "This course changed everything for me! My videos went from 100 views to 50K+ views in just 2 weeks!",
+                rating: 5,
+              },
+              {
+                name: "James K.",
+                text: "Tyler makes it so easy to understand. No complicated jargon, just straight-up value. Highly recommend!",
+                rating: 5,
+              },
+              {
+                name: "Maria L.",
+                text: "I went from zero editing skills to creating viral content. The step-by-step tutorials are incredible.",
+                rating: 5,
+              },
+              {
+                name: "David P.",
+                text: "Best investment I've made for my business. The VFX effects are game-changing for product promotion.",
+                rating: 5,
+              },
+              {
+                name: "Emma T.",
+                text: "The community support is unmatched. Always get quick answers to my questions in the private group.",
+                rating: 5,
+              },
+              {
+                name: "Chris R.",
+                text: "I didn't think I could do this, but the beginner course made it so simple. Already planning my next videos!",
+                rating: 5,
+              },
+            ].map((review, i) => (
+              <div key={i} className="bg-[#1a1a1a] border border-[#333] rounded-xl p-6">
+                <div className="flex gap-1 mb-4 text-yellow-400">
+                  {[...Array(review.rating)].map((_, j) => (
+                    <svg key={j} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-gray-300 mb-4 italic">"{review.text}"</p>
+                <p className="font-bold text-white">— {review.name}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <a
+              href="#pricing"
+              className="inline-block bg-gradient-to-r from-[#FE2C55] to-[#25F4EE] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-[0_4px_15px_rgba(254,44,85,0.3)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(254,44,85,0.5)]"
+            >
+              Join the Community and Go Viral Now! (90% Off!)
+            </a>
           </div>
         </div>
       </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section id="trusted-by" className="py-12 px-4 bg-gray-900">
+        <div className="container mx-auto max-w-6xl text-center">
+          <p className="text-[24px] md:text-[38px]">Apa Saja yang Termasuk dalam Kursus</p>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-10">
+            {[
+              { image: null, title: null },
+              { image: "/wic-1.jpg", title: "Ini Tutorial Video yang Sarat Nilai", description: "Kursus ini mencakup banyak sekali video yang sarat akan nilai. Anda juga akan mempelajari cara membuat Efek Visual Viral yang menarik perhatian dari para influencer dan merek ternama, memberikan Anda persediaan teknik viral yang tidak terbatas yang dapat diterapkan pada NICHE atau industri APA PUN." },
+              { image: "/wic-2.jpg", title: "Formula Hook dan Retensi", description: "Pelajari teknik rahasia untuk membuat video yang menghentikan scroll yang membuat penonton Anda kagum! Pahami apa yang diperlukan untuk menahan perhatian mereka dan meningkatkan waktu tonton Anda, yang mengarah pada lebih banyak penayangan, eksposur, dan pertumbuhan!" },
+              // { image: "/wic-3.jpg", title: "Komunitas Pribadi", description: "Di sinilah perbedaan kami dengan kursus lain atau belajar di YouTube. Menjadi bagian dari komunitas orang-orang dengan pemikiran serupa tidak hanya memberi Anda kesempatan untuk mengajukan pertanyaan dan mendapatkan kejelasan, tetapi juga menjamin kesuksesan yang lebih cepat bagi Anda!" },
+            ].map((item, i) => (
+              item.image ? (
+                <div key={i} className="flex flex-col items-center gap-4 mb-8">
+                  <p className="text-center text-gray-300 text-3xl mb-6 font-semibold max-w-[800px]">{item.title}</p>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-[800px] max-w-full h-auto rounded-lg"
+                  />
+                  <p className="text-center text-gray-400 text-lg mt-4 max-w-[800px]">{item.description}</p>
+                </div>
+              ) : null
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {/* SECTION 11: COMMUNITY / GUIDES */}
       <section id="community-guides" className="py-20 bg-gray-900 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-[2.5rem] font-black leading-tight mb-6">Komunitas Pribadi</h2>
-          <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-            Di sinilah kami berbeda dari kursus lain atau belajar di YouTube. Menjadi bagian dari komunitas orang-orang
-            yang berpikiran sama tidak only memberi Anda kesempatan untuk bertanya dan mendapatkan kejelasan, tetapi
-            juga menjamin kesuksesan Anda lebih cepat!
-          </p>
+
           <h2 className="text-[2.5rem] font-black leading-tight mt-16 mb-6">
             Panduan Langkah Demi Langkah untuk Memastikan Anda Berhasil!
           </h2>
-          <div className="bg-gray-800 aspect-video rounded-lg flex items-center justify-center text-gray-500 max-w-2xl mx-auto">
-            (Placeholder untuk Gambar/Visual Panduan)
+          <div className="bg-gray-800  rounded-lg flex items-center justify-center text-gray-500 max-w-2xl mx-auto">
+            <img src="/sysguide.gif" alt="Guides" className="w-full h-full object-cover rounded-lg" />
           </div>
         </div>
       </section>
 
       {/* SECTION 12: WHO THIS IS FOR */}
       <section id="who-this-is-for" className="py-20 px-4">
+        <h1 className="text-center text-6xl max-w-5xl mb-8 mx-auto font-bold " >Panduan Langkah Demi Langkah untuk Memastikan Anda Berhasil!</h1>
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-[2.5rem] font-black leading-tight text-center mb-12">Untuk Siapa Kursus Ini</h2>
           <ul className="space-y-4 text-lg max-w-2xl mx-auto">
@@ -1588,7 +1725,7 @@ export default function ViralVFXPage() {
       {/* SECTION 13: FINAL CTA */}
       <section id="final-cta" className="py-20 px-4">
         <div className="container mx-auto max-w-3xl">
-          <img src='/save-90.png' alt='Save 90%' className='mx-auto mb-6 rounded-lg shadow-lg border border-gray-700' />
+          <img src='/wtc.png' alt='Save 90%' className='mx-auto mb-6 rounded-lg shadow-lg border border-gray-700' />
           <div className="bg-[#111] border-2 border-[#FE2C55] rounded-xl p-10 shadow-[0_10px_30px_rgba(254,44,85,0.1)]">
 
             <h2 className="text-3xl font-bold text-center mb-2">
@@ -1606,13 +1743,16 @@ export default function ViralVFXPage() {
               <p className="text-white-700 line-through md:text-[20px]">TOTAL NILAI: <span className="">$1825</span></p>
               <p className="text-[26px] text-white-700 my-2">HANYA <span className="line-through">$997</span></p>
               <p className="md:text-8xl font-black text-red-500 my-4">$97</p>
-              <p className="text-[18px] text-white font-semibold">(Akses Seumur Hidup Instan!)</p>
+              <p className="text-[18px] text-white font-semibold">Hemat 90% Hari Ini!</p>
+              <p className="text-[18px] text-white font-semibold">Pembayaran Satu Kali</p>
+              <p className="text-[18px] text-white font-semibold">Jaminan Uang Kembali 100%</p>
+
             </div>
             <a
               href="#pricing"
               className="block w-full bg-gradient-to-r from-[#FE2C55] to-[#25F4EE] text-white font-bold px-8 py-4 rounded-lg text-center text-lg transition-all duration-300 shadow-[0_4px_15px_rgba(254,44,85,0.3)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(254,44,85,0.5)]"
             >
-              Amankan Penawaran Ini & Jadi Viral Sekarang! (Hemat 80%)
+              Ambil Penawaran Ini & Jadi Viral Sekarang! (DISKON 90%)
             </a>
             <div className="text-center mt-4">
               <span className="text-sm text-gray-400">Garansi Uang Kembali 100%</span>
@@ -1670,6 +1810,12 @@ export default function ViralVFXPage() {
                 {openFaq === i && <div className="px-6 pb-6 text-gray-400 leading-relaxed">{faq.a}</div>}
               </div>
             ))}
+          </div>
+
+          <div className="mt-12 mx-auto max-w-5xl">
+            <img src='/mbg.webp' alt='FAQ Image' className='mx-auto rounded-lg' />
+            <h3 className="text-center text-3xl font-bold mt-4">Apakah ada jaminan?</h3>
+            <p className="text-center text-gray-400 mt-4">Tentu saja. Kami memiliki jaminan uang kembali 14 hari! Jika Anda tidak puas karena alasan apa pun, Anda dapat meminta pengembalian uang penuh dalam waktu 14 hari setelah pembelian.</p>
           </div>
         </div>
       </section>
