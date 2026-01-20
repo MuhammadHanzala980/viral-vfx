@@ -1318,129 +1318,7 @@ export default function ViralVFXPage() {
 
           {/* Bonus Course 6 */}
 
-          <h2 className="text-center text-2xl md:text-5xl font-semibold text-white mb-4 mt-[6rem]">
-            BONUS #6
-          </h2>
-
-          <p className="text-center text-[#25F4EE] font-semibold text-2xl mb-6 italic">Akses Seumur Hidup APLIKASI iOS/Android</p>
-
-          <div className="mt-8 bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] border border-gray-800 rounded-xl p-6 md:p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              {/* Left: Product Image */}
-              <div className="flex justify-center">
-                <img
-                  src="/bc6main.webp"
-                  alt="Viral VFX PRO"
-                  className="w-full max-w-lg h-auto rounded-lg"
-                />
-              </div>
-
-              {/* Right: Benefits List */}
-              <div>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <svg
-                      className="text-[#25F4EE] w-6 h-6 flex-shrink-0 mt-0.5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-gray-300">
-                      <span className="font-bold text-white"></span>
-                      Akses portal VFX Anda dengan mudah dari ponsel di saku Anda
-
-
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <svg
-                      className="text-[#25F4EE] w-6 h-6 flex-shrink-0 mt-0.5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-gray-300">
-                      <span className="font-bold text-white"></span>
-                      Terhubung tanpa hambatan dengan komunitas VFX yang beranggotakan lebih dari 16.500 anggota dan dapatkan masukan untuk konten Anda kapan pun Anda butuhkan
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <svg
-                      className="text-[#25F4EE] w-6 h-6 flex-shrink-0 mt-0.5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-gray-300">
-                      <span className="font-bold text-white"></span>
-                      Terhubung tanpa hambatan dengan komunitas VFX yang beranggotakan lebih dari 16.500 anggota dan dapatkan masukan untuk konten Anda kapan pun Anda butuhkan
-                    </span>
-                  </li>
-
-                  <li className="flex items-start gap-3">
-                    <svg
-                      className="text-[#25F4EE] w-6 h-6 flex-shrink-0 mt-0.5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-gray-300">
-                      <span className="font-bold text-white"></span>
-                      Dapatkan tips dan trik konten paling modern dan mutakhir di ujung jari Anda 24/7 (panduan ahli pribadi di saku Anda!)
-                    </span>
-                  </li>
-
-                  <li className="flex items-start gap-3">
-                    <svg
-                      className="text-[#25F4EE] w-6 h-6 flex-shrink-0 mt-0.5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-gray-300">
-                      <span className="font-bold text-white"></span>
-                      Putar pelajaran dan modul favorit Anda dan jangan pernah khawatir lagi untuk mengingat kata sandi Anda
-                    </span>
-                  </li>
-
-                  <li className="flex items-start gap-3">
-                    <svg
-                      className="text-[#25F4EE] w-6 h-6 flex-shrink-0 mt-0.5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-gray-300">
-                      <span className="font-bold text-white"></span>
-                      Dapatkan notifikasi push dengan berita dan pembaruan terkini sehingga Anda SELALU mengikuti perubahan dan strategi baru
-                    </span>
-                  </li>
-
-
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="text-center mt-8">
-            <a
-              href="#pricing"
-              className="inline-block bg-gradient-to-r from-[#FE2C55] to-[#25F4EE] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-[0_4px_15px_rgba(254,44,85,0.3)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(254,44,85,0.5)]"
-            >
-              Saya Siap Menjadi VIRAL! (Diskon 90%)
-            </a>
-          </div>
+    
 
         </div>
       </section>
@@ -1557,46 +1435,46 @@ export default function ViralVFXPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                name: "Sarah M.",
-                text: "This course changed everything for me! My videos went from 100 views to 50K+ views in just 2 weeks!",
-                rating: 5,
+              name: "Siti Rahmawati",
+              text: "Course ini benar-benar mengubah segalanya buat saya. Video saya naik dari 100 views ke 50 ribu+ cuma dalam 2 minggu.",
+              rating: 5,
               },
               {
-                name: "James K.",
-                text: "Tyler makes it so easy to understand. No complicated jargon, just straight-up value. Highly recommend!",
-                rating: 5,
+              name: "James K.",
+              text: "Everything is explained in a very simple way. Nggak ada jargon ribet, langsung ke praktik dan hasilnya kelihatan.",
+              rating: 5,
               },
               {
-                name: "Maria L.",
-                text: "I went from zero editing skills to creating viral content. The step-by-step tutorials are incredible.",
-                rating: 5,
+              name: "Maria Lestari",
+              text: "Dari nol soal editing sampai bisa bikin konten yang viral. Tutorialnya step-by-step dan gampang banget diikutin.",
+              rating: 5,
               },
               {
-                name: "David P.",
-                text: "Best investment I've made for my business. The VFX effects are game-changing for product promotion.",
-                rating: 5,
+              name: "David Pratama",
+              text: "Best investment I've made buat bisnis saya. Efek VFX yang diajarin bener-bener game-changing buat promosi produk.",
+              rating: 5,
               },
               {
-                name: "Emma T.",
-                text: "The community support is unmatched. Always get quick answers to my questions in the private group.",
-                rating: 5,
+              name: "Emma Putri",
+              text: "Community support-nya kuat banget. Kalau ada pertanyaan, biasanya langsung dapat jawaban cepat di private group.",
+              rating: 5,
               },
               {
-                name: "Chris R.",
-                text: "I didn't think I could do this, but the beginner course made it so simple. Already planning my next videos!",
-                rating: 5,
+              name: "Chris Santoso",
+              text: "Awalnya ragu bisa ngikutin, but the beginner course made everything feel simple. Sekarang udah mulai planning video selanjutnya.",
+              rating: 5,
               },
             ].map((review, i) => (
               <div key={i} className="bg-[#1a1a1a] border border-[#333] rounded-xl p-6">
-                <div className="flex gap-1 mb-4 text-yellow-400">
-                  {[...Array(review.rating)].map((_, j) => (
-                    <svg key={j} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-gray-300 mb-4 italic">"{review.text}"</p>
-                <p className="font-bold text-white">— {review.name}</p>
+              <div className="flex gap-1 mb-4 text-yellow-400">
+                {[...Array(review.rating)].map((_, j) => (
+                <svg key={j} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                ))}
+              </div>
+              <p className="text-gray-300 mb-4 italic">"{review.text}"</p>
+              <p className="font-bold text-white">— {review.name}</p>
               </div>
             ))}
           </div>
@@ -1812,10 +1690,16 @@ export default function ViralVFXPage() {
             ))}
           </div>
 
-          <div className="mt-12 mx-auto max-w-5xl">
+          <div className="mt-12 mx-auto max-w-5xl text-center">
             <img src='/mbg.webp' alt='FAQ Image' className='mx-auto rounded-lg' />
             <h3 className="text-center text-3xl font-bold mt-4">Apakah ada jaminan?</h3>
             <p className="text-center text-gray-400 mt-4">Tentu saja. Kami memiliki jaminan uang kembali 14 hari! Jika Anda tidak puas karena alasan apa pun, Anda dapat meminta pengembalian uang penuh dalam waktu 14 hari setelah pembelian.</p>
+          <a
+              href="#pricing"
+              className="inline-block bg-gradient-to-r from-[#FE2C55] to-[#25F4EE] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-[0_4px_15px_rgba(254,44,85,0.3)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(254,44,85,0.5)] m-auto mt-8"
+            >
+              Ya, Saya Ingin Penawaran Ini Sebelum Hilang! (Hemat 90%)
+            </a>
           </div>
         </div>
       </section>
