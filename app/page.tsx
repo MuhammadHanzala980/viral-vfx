@@ -481,7 +481,7 @@ export default function ViralVFXPage() {
             <div className="text-center my-6">
               <p className="text-white-700 line-through md:text-[20px]">TOTAL NILAI: <span className="">$1825</span></p>
               <p className="text-[26px] text-white-700 my-2">HANYA <span className="line-through">$997</span></p>
-              <p className="md:text-8xl font-black text-red-500 my-4">$97</p>
+              <p className="md:text-8xl text-[38px] font-black text-red-500 my-4">$97</p>
               <p className="text-[18px] text-white font-semibold">(Akses Seumur Hidup Instan!)</p>
             </div>
             <a
@@ -1604,7 +1604,7 @@ export default function ViralVFXPage() {
       <section id="final-cta" className="py-20 px-4">
         <div className="container mx-auto max-w-3xl">
           <img src='/wtc.png' alt='Save 90%' className='mx-auto mb-6 rounded-lg shadow-lg border border-gray-700' />
-          <div className="bg-[#111] border-2 border-[#FE2C55] rounded-xl p-10 shadow-[0_10px_30px_rgba(254,44,85,0.1)]">
+          <div className="bg-[#111] border-2 border-[#FE2C55] rounded-xl px-4 py-10 md:p-10 shadow-[0_10px_30px_rgba(254,44,85,0.1)]">
 
             <h2 className="text-3xl font-bold text-center mb-2">
               PROMO <span className="text-[#FE2C55]">TAHUN BARU</span>
@@ -1620,15 +1620,15 @@ export default function ViralVFXPage() {
             <div className="text-center my-6">
               <p className="text-white-700 line-through md:text-[20px]">TOTAL NILAI: <span className="">$1825</span></p>
               <p className="text-[26px] text-white-700 my-2">HANYA <span className="line-through">$997</span></p>
-              <p className="md:text-8xl font-black text-red-500 my-4">$97</p>
-              <p className="text-[18px] text-white font-semibold">Hemat 90% Hari Ini!</p>
-              <p className="text-[18px] text-white font-semibold">Pembayaran Satu Kali</p>
-              <p className="text-[18px] text-white font-semibold">Jaminan Uang Kembali 100%</p>
+              <p className="md:text-8xl text-[38px] font-black text-red-500 my-4">$97</p>
+              <p className="text-[18px] text-white-700 font-semibold">Hemat 90% Hari Ini!</p>
+              <p className="text-[18px] text-white-700 font-semibold">Pembayaran Satu Kali</p>
+              <p className="text-[18px] text-white-700 font-semibold">Jaminan Uang Kembali 100%</p>
 
             </div>
             <a
               href="#pricing"
-              className="block w-full bg-gradient-to-r from-[#FE2C55] to-[#25F4EE] text-white font-bold px-8 py-4 rounded-lg text-center text-lg transition-all duration-300 shadow-[0_4px_15px_rgba(254,44,85,0.3)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(254,44,85,0.5)]"
+              className="block w-full bg-gradient-to-r from-[#FE2C55] to-[#25F4EE] text-white font-bold px-8 py-4 rounded-lg text-center text-[14px] md:text-lg transition-all duration-300 shadow-[0_4px_15px_rgba(254,44,85,0.3)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(254,44,85,0.5)]"
             >
               Ambil Penawaran Ini & Jadi Viral Sekarang! (DISKON 90%)
             </a>
